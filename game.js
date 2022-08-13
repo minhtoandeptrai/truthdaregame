@@ -41,20 +41,19 @@ dareBtn.addEventListener('click', () =>{
 function render(option, level)
 {
     off()
-    let number = Math.floor(Math.random() * 64)
     if(option == 'truth')
     {
         if(level == 'normal')
         {
-            ques.innerText = classicTruth[number]
+            ques.innerText = classicTruth[Math.floor(Math.random() * classicTruth.length)]
         }
         else if(level == 'adult')
         {
-            ques.innerText = adultTruth[number]
+            ques.innerText = adultTruth[Math.floor(Math.random() * adultTruth.length)]
         }
     }
     if(option == 'dare')
     {
-        ques.innerText = adultDare[number]
+        ques.innerText = adultDare[Math.floor(Math.random() * adultDare.length)]
     }
 }
