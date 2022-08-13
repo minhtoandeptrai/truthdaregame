@@ -45,15 +45,15 @@ function render(option, level)
     {
         if(level == 'normal')
         {
-            ques.innerText = classicTruth[Math.floor(Math.random() * classicTruth.length)]
+            ques.innerText = classicTruth[Math.floor(Math.random() * classicTruth.length - 1)]
         }
         else if(level == 'adult')
         {
-            ques.innerText = adultTruth[Math.floor(Math.random() * adultTruth.length)]
+            ques.innerText = adultTruth[Math.floor(Math.random() * adultTruth.length - 1)]
         }
     }
     if(option == 'dare')
     {
-        ques.innerText = adultDare[Math.floor(Math.random() * adultDare.length)]
+        ques.innerText = adultDare[Math.floor(Math.random() * adultDare.length - 1)]
     }
 }
